@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse</title>
+</head>
+<body>
+    <textarea class="input" ></textarea>
+
+
+
+
+
+    <!-- We will add some Mouse propertes -->
+    <script>
+    // const message = document.querySelector(".input");
+    // message.addEventListener("mousedown",(event) =>{
+    //     console.log(event.button);
+    // })
+
+
+
+
+    // We can add some value propertes we can sue page or clint both
+    const message = document.querySelector(".input");
+    message.addEventListener("mousedown",(event) =>{
+        var xcor = event.pageX;
+        var ycor = event.pageY;
+        var cors = "X cor- ${xcor},Y cor- ${ycor}"
+        console.log(cors);
+    })
+
+</script>
+</body>
+</html>

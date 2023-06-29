@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM5</title>
+    <style>
+        .first {
+            font-size: 20 rem;
+            padding: 8px 2rem;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .first:hover {
+            cursor: pointer;
+            opacity: .8;
+        }
+
+        .second {
+            font-size: 20 rem;
+            padding: 8px 2rem;
+            border-radius: 4px;
+            margin-right: 10px;
+
+        }
+
+        .third {
+            font-size: 20 rem;
+            padding: 8px 2rem;
+            border-radius: 4px;
+            margin-right: 10px;
+
+        }
+
+        .four {
+            font-size: 20 rem;
+            padding: 8px 2rem;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="inner">
+        <button class="first">Red</button>
+        <button class="second">Green</button>
+        <button class="third">Blue</button>
+        <button class="four">White</button>
+    </div>
+
+
+
+
+    <!-- Add The Javascript -->
+    <script>
+        const message = document.querySelector("#inner");
+        message.addEventListener("click",(event) =>{
+            let btntext = event.target.innerText;
+            if(btntext===red){
+                event.target.classList.toggle("btn-red");
+            }
+        })
+    </script>
+
+</body>
+
+</html>
